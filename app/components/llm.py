@@ -16,6 +16,7 @@ def load_llm(groq_api_key : str = Configurations.GROQ_API_KEY, model : str = Con
             model = model,
             api_key = groq_api_key,
             temperature=0.3,
+            max_tokens = 256
         )
 
         logger.info("LLM loaded successfully.")
